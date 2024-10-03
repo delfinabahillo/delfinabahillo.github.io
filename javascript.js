@@ -31,3 +31,6 @@ function showSlide(index) {
 function changeSlide(n) {
     showSlide(currentSlide + n);
 }
+function mostrarMensaje(event) {
+    event.preventDefault(); // Evita que el formulario se envíe de inmediato
+    document.getElementById('mensajeGracias').style.display = 'block';}

@@ -57,15 +57,20 @@
         </div>
     </div>
 	<div class="fo">
-        <form method="post" action="gracias.html" class="form">
+    <form method="post" class="form" onsubmit="mostrarMensaje(event)">
         <h1 class="recomend"> Recomendá una Canción</h1>
-	   <p><strong>RECOMENDACIÓN</strong>
-		<input type="text" name="recomend"></p>
-		<p><strong>EMAIL</strong>
-		<input type="email" name="email"></p>
-	<button type="submit"> ENVIAR</button>
-        </form>
-   </div>
+        <p><strong>RECOMENDACIÓN</strong>
+        <input type="text" name="recomend" required></p>
+        <p><strong>EMAIL</strong>
+        <input type="email" name="email" required></p>
+        <button type="submit">ENVIAR</button>
+        
+        <!-- Aquí está el mensaje, debajo del botón -->
+        <div id="mensajeGracias">
+            ¡Gracias por tu recomendación!
+        </div>
+    </form>
+</div>
 </main>
 	<script src="javascript.js"> </script>
 </body>
