@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MUSICALIZATE</title>
+	<link rel="stylesheet" href="estilos.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+<header>
+	<div class="logo"> 
+	<a href="index.html"><img src="logo.jpeg" alt="Logo"> </a>
+	<a href="index.html"> <h1 class="h1">MUSICALIZÁTE</h1> </a>
+		</div>
+	<div>
+	<a href="#" class="icono" onclick="MiFuncion()">
+			<i class="fa fa-bars"></i>
+</a>
+	<nav id="navegador" class=" ">
+		<ul>
+			<li> <a href="p1.html">Generos </a></li>
+			<li> <a href="p1.html"> Artistas </a></li>
+			<li> <a href="p3.html"> Canciones </a></li>
+			<li> <a href="p4.html"> Contacto </a> </li>
+		</ul>
+	</nav>
+</div>
+</header>
+<main>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="logo.jpeg" alt="Imagen Principal" class="main-image">
+        </div>
+        <div class="app1">
+            <a href="https://mail.google.com/" class="item1" aria-label="Email">
+                <img src="mail.jpg" alt="Email" class="icon1">
+                <span class="social-text1">musicalizate@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com" class="item1" aria-label="Instagram">
+                <img src="ig.png" alt="Instagram" class="icon1">
+                <span class="social-text1">@musicalizate</span>
+            </a>
+            <a href="https://www.tiktok.com" class="item1" aria-label="TikTok">
+                <img src="tiktok.jpg" alt="TikTok" class="icon1">
+                <span class="social-text1">@musicalizate</span>
+            </a>
+            <a href="https://twitter.com" class="item1" aria-label="Twitter">
+                <img src="twitter.png" alt="Twitter" class="icon1">
+                <span class="social-text1">@musicalizate</span>
+            </a>
+        </div>
+    </div>
+	<div class="fo">
+        <form method="post" action="gracias.html" class="form">
+        <h1 class="recomend"> Recomendá una Canción</h1>
+	   <p><strong>NOMBRE</strong>
+		<input type="text" name="nombre"></p>
+		<p><strong>EMAIL</strong>
+		<input type="email" name="email"></p>
+		<p><strong>RECOMENDACIÓN</strong>
+		<input type="text" name="recomend"></p>	
+	<button type="submit"> ENVIAR</button>
+        </form>
+   </div>
+</main>
+	<script src="javascript.js"> </script>
+</body>
+</html>
