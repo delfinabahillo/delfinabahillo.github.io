@@ -390,18 +390,16 @@ footer {
 	flex-direction: column;
 	gap: 1.5em;
 	background-color: #0f2f76;
-	width: 50%;
 	padding: 20px;
-	border: 1px solid #000; /* Borde de 1px */
-	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	text-align: center;
 	width: 300px;
+	height: 200px; /* Alto fijo del div */
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin: auto;
 }
-.fo{
-	justify-content: center;
-	align-items: center;
-}
+
 
 .recomend {
 	font-size: 24px;
@@ -463,6 +461,10 @@ iframe {
 
 .cta-button:hover {
 	background-color: #45a049;
+}
+.anun{ 
+width: 728px;
+height: 90px;
 }
 @media(max-width:600px){
 	.h1 {
@@ -625,5 +627,18 @@ iframe {
 	}
 	.slide{
 		position: inherit;
+	}
+	  .recomend {
+        font-size: 20px; /* Disminuir tamaño de fuente en pantallas pequeñas */
+    }
+
+    .form {
+        width: 95%; /* Ancho más flexible en pantallas pequeñas */
+        padding: 15px; /* Reduce el padding */
+        border-radius: 8px; /* Ajusta el borde si es necesario */
+    }
+	.anun{
+		width: 300px;
+		height: 600px;
 	}
 }
