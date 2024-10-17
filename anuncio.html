@@ -8,6 +8,8 @@
 	/* Estilos generales */
 	body {
 		margin: 0;
+		font-family: 'Roboto', sans-serif; /* Tipografía suave */
+		background-color: #f9f9f9;
 	}
 
 	.anuncio {
@@ -18,81 +20,101 @@
 		max-width: 1200px;
 		background-color: #fff;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		padding: 10px;
-		gap:1px;
+		box-sizing: border-box;
+		border-radius: 10px;
+		gap: 20px;
 	}
 
 	/* Imagen del anuncio */
 	.img {
-		width: 30%; /* Imagen ocupa el 30% del espacio en pantallas grandes */
+		width: 40%; /* Imagen ocupa el 40% del espacio en computadoras */
 		height: auto;
+		border-radius: 10px;
+		margin: 0 10px;
 	}
 
 	/* Estilo del texto */
 	.texto {
-		font-size: 24px;
-		text-align: center;
-		margin: 0 20px;
+		font-size: 28px;
+		font-weight: bold;
+		color: #333;
+		margin-right: 20px;
+		width: 30%;
+	}
+
+	.h7 {
+		font-size: 18px;
+		color: #555;
+		text-align: left;
+		width: 30%;
 	}
 
 	/* Estilo del botón */
 	.cta-button {
-		padding: 5px 10px;
+		padding: 10px 20px;
 		background-color: #8A2BE2;
 		color: white;
 		border: none;
-		border-radius: 5px;
+		border-radius: 10px; /* Botón redondeado */
 		cursor: pointer;
 		transition: background-color 0.3s;
+		text-transform: uppercase;
+		font-size: 14px;
 	}
 
 	.cta-button:hover {
 		background-color: #7B68EE;
 	}
 
-	/* Estilos para pantallas grandes */
-	@media (max-width: 769px) {
+	/* Estilos para pantallas móviles */
+	@media (max-width: 720px) {
 		.anuncio {
-			flex-direction: row;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px;
+			text-align: center;
 		}
 
 		.img {
-			width: 90%;
+			width: 100%; /* Imagen ocupa el 80% del espacio en móviles */
+			margin-bottom: 15px;
 		}
 
-		.texto {
-			font-size: 24px;
+		.texto, .h7 {
+			width: 100%;
+			margin-bottom: 10px;
+			text-align: center;
 		}
 
 		.cta-button {
-			width: auto;
+			margin-bottom: 20px;
+			text-align: center;
 		}
 	}
 
-	/* Estilos para móviles */
+	/* Estilos para pantallas pequeñas (celulares) */
 	@media (max-width: 480px) {
 		.anuncio {
-			align-items: center; /* Centra los elementos */
-			padding: 0; /* Elimina el padding adicional */
-			gap: 0; /* Asegura que no haya espacio extra entre elementos */
-			height: 100px;
+			flex-direction: column;
+			align-items: center;
+			padding: 10px;
+			text-align: center;
 		}
 
 		.img {
-			width: 100%;
-			margin-bottom: 0; /* Elimina el espacio inferior */
+			width: 80%;
+			margin-bottom: 15px;
 		}
 
-		.texto {
-			font-size: 20px;
-			margin: 0; /* Elimina márgenes extra en el texto */
-			padding: 0; /* Elimina padding si hay */
+		.texto, .h7 {
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+			margin-bottom: 10px;
 		}
 
 		.cta-button {
-			width: 100%; /* Botón ocupa todo el ancho en móviles */
-			margin: 0; /* Elimina márgenes */
-			border-radius: 0; /* Alinea los bordes del botón al contenedor */
+			text-align: center;
 		}
 	}
 </style>
@@ -102,13 +124,13 @@
 	<div class="anuncio">
 		<picture>
 			<source media="(max-width: 480px)" srcset="anuncioc.jpg"> 
-			<img src="anunciog.jpg" class="img" alt="Imagen del anuncio">
+			<img src="anuncioc.jpg" class="img" alt="Imagen del anuncio">
 		</picture>
-		<h1 class="texto">MUSICALIZATE</h1>
+		<div class="texto">MUSICALIZATE</div>
+		<h7 class="h7">¡Conocé toda la música que te estás perdiendo!</h7>
 		<a href="index.html" target="_blank"> 
 			<button class="cta-button">Descubre más</button>
 		</a>
 	</div>
 </body>
 </html>
-
