@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación MUSICALIZÁTE</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Chelsea Market';
+            background: linear-gradient(135deg, #d9d9d9, #b3b3b3);
+            color: white;
+        }
+        
+        /* Estilo para la palabra MUSICALIZÁTE sin fondo */
+        .text {
+            font-size: 3em;
+            color: #0f2f76;
+            font-weight: bold;
+            margin: 0;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            font-size: 1em;
+            color: black;
+            margin-top: 10px;
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            scroll-snap-align: start;
+            text-align: center;
+            color: white;
+        }
+
+        .slide img {
+            max-width: 80%;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+		.mapa{
+			max-height: 70%;
+			width: auto;
+		}
+        /* Estilo para WIREFRAMES */
+        #wire-slide h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #0f2f76;
+        }
+		
+        #wire-slide .wire-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre las imágenes */
+        }
+
+        .wire {
+            width: 500px; /* Tamaño ajustable de las imágenes */
+        }
+		.infor{
+			font-size: 22px;
+			font-family: 'Chelsea Market';
+		}
+
+        /* Barra de navegación centrada */
+        .navigation {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+        }
+
+        .navigation a {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .navigation a:hover {
+            background: white;
+            color: black;
+        }
+
+        .container {
+            height: 100vh;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+		.pres {
+            background-color: #0f2f76; /* Color azul */
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .pres:hover {
+            background-color: #0a1f50; /* Color azul más oscuro al pasar el mouse */
+        }
+		.blue-box {
+    background-color: #0f2f76;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+			display: flex;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#main-slide">Inicio</a>
+		 <a href="#info-slide">Info</a>
+        <a href="#mapa-slide">Mapa del Sitio</a>
+        <a href="#wire-slide">Wireframes</a>
+        <a href="#diseño-slide">Diseño</a>
+		<a href="#sitio-slide">Ir al sitio</a>
+    </div>
+
+    <div class="container">
+        <!-- Slide Principal -->
+       <div class="slide" id="main-slide">
+           <img src="logo.jpeg" alt="logo" class="logo">
+           <h1 class="text">MUSICALIZÁTE</h1>
+           <div class="info">
+               <p><strong>Alumno:</strong> Delfina Bahillo</p>
+               <p><strong>Profesor:</strong> Wenceslao Zavala</p>
+               <p><strong>Materia:</strong> Producción Digital</p>
+           </div>
+       </div>
+
+     <div class="slide" id="info-slide">
+		 <img src="logo.jpeg" alt="logo" class="logo">
+		 <p class="infor"> Musicalizáte es un sitio web dedicado a la recomendación de música. El objetivo es revivir la música de épocas pasadas, promover nuevos artistas y conocer nuevas tenedencias, ofreciendo tanto recomendaciones seleccionadas como un espacio para que los usuarios compartan sus propias sugerencias.</p>
+        </div>
+        <div class="slide" id="mapa-slide">
+            <h1>MAPA DEL SITIO</h1>
+            <img src="INICIO.PNG" alt="mapa" class="mapa">
+        </div>
+
+        <!-- Slide Wireframes -->
+        <div class="slide" id="wire-slide">
+            <h2>WIREFRAMES</h2>
+            <div class="wire-container">
+                <img src="celular.png" alt="wire1" class="wire">
+                <img src="compu.png" alt="wire2" class="wire">
+            </div>
+        </div>
+
+        <!-- Slide Contacto -->
+        <div class="slide" id="diseño-slide">
+    <h3>DISEÑO</h3>
+    <p>Todos los botones del sitio son de color azul y al tener diversidad de imágenes y no seguir un patrón de colores, utilizo el recurso de la repetición de formas para darle una estructura clara al sitio.</p>
+   
+			<div class="blue-box"></div>
+</div>
+		 <div class="slide" id="sitio-slide">
+			 <a href="https://delfinabahillo.github.io/index.html"><button class="pres">IR AL SITIO</button></a>
+        </div>
+
+    </div>
+</body>
+</html>
+

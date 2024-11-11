@@ -34,3 +34,30 @@ function changeSlide(n) {
 function mostrarMensaje(event) {
     event.preventDefault(); // Evita que el formulario se envíe de inmediato
     document.getElementById('mensajeGracias').style.display = 'block';}
+
+<script type="text/javascript">
+    const diapositivas = document.querySelectorAll('.diapositiva');
+    let diapositivaActual = 0;
+    const tiempoTransicion = 10000; // Tiempo en milisegundos entre diapositivas
+ 
+    function cambiarDiapositiva(n) {
+      diapositivas[diapositivaActual].classList.remove('activa');
+      diapositivaActual = (diapositivaActual + n + diapositivas.length) % diapositivas.length;
+      diapositivas[diapositivaActual].classList.add('activa');
+    }
+ 
+    const botonAnterior = document.getElementById('anterior');
+    botonAnterior.addEventListener('click', () => {
+      cambiarDiapositiva(-1);
+    });
+ 
+    const botonSiguiente = document.getElementById('siguiente');
+    botonSiguiente.addEventListener('click', () => {
+      cambiarDiapositiva(1);
+    });
+ 
+    // Temporizador automático
+    setInterval(() => {
+      cambiarDiapositiva(1);
+    }, tiempoTransicion);
+</script>
