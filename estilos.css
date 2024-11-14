@@ -660,4 +660,11 @@ height: 90px;
 		width: 300px;
 		height: 600px;
 	}
+	.pres {
+        font-size: 16px;
+        padding: 8px 16px;
+        bottom: 10px; /* Ajuste de margen inferior para despegar del contenido */
+        max-width: 90%; /* Limitar el ancho para evitar que toque los bordes */
+        box-sizing: border-box; /* Asegura que el padding no exceda el ancho */
+    }
 }

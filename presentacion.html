@@ -131,6 +131,69 @@
     margin-top: 20px;
 			display: flex;
 }
+		@media(max-width:720px){
+    .text {
+        font-size: 2em;
+        padding: 5px 10px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .info {
+        font-size: 0.9em;
+    }
+
+    #wire-slide h2 {
+        font-size: 1.5em;
+    }
+
+    .wire-container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        overflow-x: auto; /* Permite desplazamiento horizontal */
+        padding: 0 10px;
+        scroll-snap-type: x mandatory; /* Ajuste para que se alineen en cada imagen */
+    }
+
+    .wire {
+        width: 80vw; /* Tamaño ajustable de las imágenes para que sean visibles en pantalla móvil */
+        flex-shrink: 0; /* Evita que las imágenes se redimensionen */
+        scroll-snap-align: start; /* Cada imagen se alinea al inicio al hacer scroll */
+    }
+
+    .infor {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .navigation {
+        top: 5px;
+        left: 0;
+        transform: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navigation a {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+
+    .pres {
+        font-size: 1.2em;
+        padding: 12px 24px;
+    }
+
+    .blue-box {
+        width: 80px;
+        height: 80px;
+    }
+
+		}
+		
 
     </style>
 </head>
